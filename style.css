@@ -1,0 +1,51 @@
+
+/* font upload */
+@import url('https://fonts.googleapis.com/css?family=Karla'); 
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 20px; /* create spacing around the body */
+    background-color: #f0f8ff; /* light blue background */
+}
+
+header {
+    margin-bottom: 20px; /* add spacing below the header */
+}
+
+.filter-sort {
+    display: flex; /* horizontal alignment of filters */
+    gap: 20px; /* space between filter sections */
+    margin-bottom: 20px;
+}
+
+.job-listing {
+    margin-top: 20px; /* space above job listings */
+}
+
+.job-item {
+    background-color: #ffffff; /* background color for each job */
+    border: 1px solid #ccc; /* border around each job */
+    border-radius: 5px; /* rounded corners for containers */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.job-item:hover {
+    background-color: #f9f9f9; /* highlight on hover */
+    cursor: pointer; /* interactive pointer cursor */
+}
+
+.modal {
+    position: fixed; /* ensures modal stays visible on screen */
+    top: 50%; /* centers modal vertically */
+    left: 50%; /* centers modal horizontally */
+    transform: translate(-50%, -50%); /* adjust for centering */
+    max-width: 90%; /* limit modal width */
+    max-height: 90%; /* limit modal height */
+    overflow-y: auto; /* enable vertical scrolling if content is long */
+    background-color: white; /* modal background is distinct */
+    padding: 20px; /* add padding for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* add subtle shadow */
+    z-index: 1000; /* ensure modal is above other elements */
+    border-radius: 8px; /* rounded corners */
+}
